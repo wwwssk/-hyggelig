@@ -998,24 +998,16 @@ body.active {
 		}
 	}
 
-	&__point.animPoint {
-		width: 24px;
-		height: 24px;
-		@media (max-width: 768px){
-			width: 6.4vw;
-			height: 6.4vw;
-			border: 1.067vw solid #D24318;
-		}
-	}
-	&__point-left.animPoint {
-		transform: translate(-25%, -25%);
-	}
-	&__point-right.animPoint {
-		transform: translate(25%, -25%);
+	&__point:hover {
+		transform: scale3d(2, 2, 2) !important;
 	}
 
-	&__point-right5.animPoint {
-		transform: translate(0%, 0%)!important;
+	&__point-right5 {
+		transform: scale3d(2, 2, 2) !important;
+
+	}
+	&__point-right5:hover {
+		transform: scale3d(2, 2, 2) !important;
 	}
 
 
@@ -1110,17 +1102,9 @@ body.active {
 		@media (max-width: 768px) {
 			top: 61.067vw;
 			right: 32vw;
-			border: 1.067vw solid #D24318;
 		}
 	}
-	&__point-right5 {
-		width: 24px;
-		height: 24px;
-		@media (max-width: 768px){
-			width: 6.4vw;
-			height: 6.4vw;
-		}
-	}
+
 
 
 
@@ -1350,7 +1334,7 @@ body.active {
 	&__text-hidden-right5 {
 		width: 236px;
 
-		transform: translate(100%, 100%);
+		transform: translate(100%, 50%);
 		@media (max-width: 992px) {
 			transform: translate(calc(100% + 2vw), calc(-20%));
 		}
@@ -1361,7 +1345,7 @@ body.active {
 			span {
 				&::before {
 					content: '';
-					transform: translate(-85%, -50%) rotate(45deg)!important;
+					transform: translate(-50%, -50%) rotate(45deg)!important;
 				}
 			}
 		}
